@@ -5,22 +5,22 @@ public class guessNumber {
         int attempt = 1;
         do { int range = 9;
             int number = (int)(Math.random() * (range));
-            System.out.println("Ваша задача угадать число.\n" + "Угадайте число от 0 до " + range);
+            System.out.println("Р’Р°С€Р° Р·Р°РґР°С‡Р° СѓРіР°РґР°С‚СЊ С‡РёСЃР»Рѕ.\n" + "РЈРіР°РґР°Р№С‚Рµ С‡РёСЃР»Рѕ РѕС‚ 0 РґРѕ " + range);
             int attemptsNumber = 3;
 
             for(int i=0; i < attemptsNumber;i++){
                 int input_number = scanner.nextInt();
                 if(input_number==number){
-                    System.out.println("Вы угадали");
+                    System.out.println("Р’С‹ СѓРіР°РґР°Р»Рё");
                     break;
                 } else if(input_number > number){
-                    System.out.println("Загаданное число меньше. У вас осталось " + (attemptsNumber - i-1) + " попыток");
+                    System.out.println("Р—Р°РіР°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ РјРµРЅСЊС€Рµ. РЈ РІР°СЃ РѕСЃС‚Р°Р»РѕСЃСЊ " + (attemptsNumber - i-1) + " РїРѕРїС‹С‚РѕРє");
                 } else {
-                    System.out.println("Загаданное число больше. У вас осталось " + (attemptsNumber - i-1) + " попыток");
+                    System.out.println("Р—Р°РіР°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ Р±РѕР»СЊС€Рµ. РЈ РІР°СЃ РѕСЃС‚Р°Р»РѕСЃСЊ " + (attemptsNumber - i-1) + " РїРѕРїС‹С‚РѕРє");
                 }
             }
 
-            System.out.println("Повторить игру еще раз? 1 – да / 0 – нет");
+            System.out.println("РџРѕРІС‚РѕСЂРёС‚СЊ РёРіСЂСѓ РµС‰Рµ СЂР°Р·? 1 вЂ“ РґР° / 0 вЂ“ РЅРµС‚");
              attempt = scanner.nextInt();
 
         } while(attempt == 1);

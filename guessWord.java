@@ -5,12 +5,12 @@ public class guessWord {
 
         System.out.println(Arrays.toString(words));
         int index = new Random().nextInt(words.length);
-        System.out.println("Какое слово из списка выше было загадано?");
+        System.out.println("РљР°РєРѕРµ СЃР»РѕРІРѕ РёР· СЃРїРёСЃРєР° РІС‹С€Рµ Р±С‹Р»Рѕ Р·Р°РіР°РґР°РЅРѕ?");
         Scanner scanner = new Scanner(System.in);
         String wordInput = scanner.nextLine();
         while (true) {
             if (wordInput.equalsIgnoreCase(words[index])) {
-                System.out.println("Вы угадали");
+                System.out.println("Р’С‹ СѓРіР°РґР°Р»Рё");
                 break;
             } else {
                 char[] answer = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#'};
@@ -22,8 +22,8 @@ public class guessWord {
                         }
                     }System.out.println(Arrays.toString(answer).replace("[","").replace(",","").replace("]","").replace(" ",""));
                 }
-                System.out.println("Вы не угадали");
-                System.out.println("Какое слово из списка выше было загадано?");
+                System.out.println("Р’С‹ РЅРµ СѓРіР°РґР°Р»Рё");
+                System.out.println("РљР°РєРѕРµ СЃР»РѕРІРѕ РёР· СЃРїРёСЃРєР° РІС‹С€Рµ Р±С‹Р»Рѕ Р·Р°РіР°РґР°РЅРѕ?");
                 wordInput = scanner.nextLine();
                 }
         scanner.close();
